@@ -39,10 +39,13 @@ Build the project:
 
 The application should be displayed in the browser.
 
-> Ctrl + C  to stop gulp server on windows
-> Command + C  to stop gulp server on OSX
+> Ctrl + C  
 
-The gulp server should stop
+To stop gulp server on windows
+
+> Command + C 
+
+To stop gulp server on OSX
 
 Resources
 ---------
