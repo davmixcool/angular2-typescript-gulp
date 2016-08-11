@@ -1,4 +1,4 @@
-Angular2 with TypeScript and Gulp
+Angular2 with TypeScript, Sass and Gulp
 =================================
 
 A basic Angular2 application with Gulp as build system.
@@ -17,11 +17,11 @@ Running
 
 Clone the repository:
 
-> git clone https://github.com/kolorobot/angular2-typescript-gulp.git
+> git clone https://github.com/davmixcool/angular2-typescript-gulp.git my_project
 
-Navigate to `angular2-typescript-gulp` directory:
+Navigate to `my_project` directory:
 
-> cd angular2-typescript-gulp
+> cd my_project
 
 Install dependencies:
 
@@ -39,7 +39,12 @@ Build the project:
 
 The application should be displayed in the browser.
 
+> Ctrl + C  to stop gulp server on windows
+> Command + C  to stop gulp server on OSX
+
+The gulp server should stop
+
 Resources
 ---------
 
-- A step-by-step tutorial - http://blog.codeleak.pl/2016/03/quickstart-angular2-with-typescript-and.html
+- A step-by-step tutorial on Angular2 with TypeScript and Gulp - http://blog.codeleak.pl/2016/03/quickstart-angular2-with-typescript-and.html
