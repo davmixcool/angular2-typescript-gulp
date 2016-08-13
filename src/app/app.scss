@@ -1,0 +1,12 @@
+$primary_bg: #f00;
+$primary_link: #fff;
+
+.wrapper{
+  nav{
+    background: $primary_bg;
+  a {
+     color: $primary_link;
+    }
+
+  }	
+}  
