@@ -10,8 +10,8 @@ import {AboutComponent} from "./about/components/about.components";
     directives: [TaskListComponent, AboutComponent, RouterLink, ROUTER_DIRECTIVES]
 })
 @RouteConfig([
-    {path: '/tasks', component: TaskListComponent, as: 'TaskList'},
-    {path: '/about', component: AboutComponent, as: 'About'}
+    {path: '/tasks', component: TaskListComponent},
+    {path: '/about', component: AboutComponent}
 ])
 export class AppComponent implements OnInit {
     ngOnInit() {
