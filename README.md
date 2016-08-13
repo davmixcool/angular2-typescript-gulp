@@ -11,6 +11,7 @@ Prerequisites
 - typings
 - typescript
 - ts-node
+- node-sass
 
 Running
 -------
