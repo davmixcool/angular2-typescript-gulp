@@ -37,14 +37,6 @@ gulp.task("compile", ["tslint"], () => {
 });
 
 /**
- * Copy all resources that are not TypeScript files into build directory.
- */
-gulp.task("resources", () => {
-    return gulp.src(["src/**/*", "!**/*.ts"])
-        .pipe(gulp.dest("build"));
-});
-
-/**
  * Compile scss sources to css in build directory.
  */
 gulp.task('sass', function () {
@@ -52,6 +44,16 @@ gulp.task('sass', function () {
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest('build'));
 });
+
+
+/**
+ * Copy all resources that are not TypeScript files into build directory.
+ */
+gulp.task("resources", () => {
+    return gulp.src(["src/**/*", "!**/*.ts" , "!**/*.scss"])
+        .pipe(gulp.dest("build"));
+});
+
 
 
 /**
@@ -86,6 +88,6 @@ gulp.task('watch', function () {
 /**
  * Build the project.
  */
-gulp.task("build", ['compile', 'resources', 'libs'], () => {
+gulp.task("build", ['compile', 'scss', 'resources', 'libs'], () => {
     console.log("Building the project ...");
 });
